@@ -9,3 +9,12 @@ export const getallusers = async (req, res) =>{
         res.status(500).json({error:"Something went wrong"})
     }
 }
+
+export const getUser = async (req, res) => {
+    try {
+      const user = await User.findById(req.params.id);
+      res.status(200).json(user);
+    } catch (err) {
+        res.status(500).json({error:"Something went wrong"})
+    }
+  };

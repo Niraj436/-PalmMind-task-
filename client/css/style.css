@@ -62,8 +62,16 @@ body {
       z-index: 9999;
       display:none;
   }
-  
-  
+
+  .custom-table{
+    margin-top: 6rem;
+    background-color: #000 !important;
+  }
+
+   tr{
+    cursor: pointer;
+   }
+
   @media(max-width:768px) {
       .navigation{
           position: fixed;
