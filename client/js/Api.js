@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 
   $(document).on("click", ".user-row", function () {
-    $(".model").show(1000);
+    $(".model").show(700);
   });
 
   // getuser
@@ -64,7 +64,7 @@ $(document).ready(function () {
   $(".model").hide();
 
   $(document).on("click", ".close-model", function () {
-    $(".model").hide(1000);
+    $(".model").hide(500);
   });
 
   $(".cancel-model").on("click", function () {

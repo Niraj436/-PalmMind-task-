@@ -4,13 +4,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    73.4deg,
-    rgba(215, 215, 215, 0.23) 9.9%,
-    rgba(77, 77, 77, 1) 83.2%
-  );
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(151,151,151,1) 0%, rgba(55,55,55,1) 90% );
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  height: 100vh;
 }
 li{
     list-style:  none;

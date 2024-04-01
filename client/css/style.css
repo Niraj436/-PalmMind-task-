@@ -46,7 +46,7 @@ body {
   }
   
   .navigation {
-      background: hsl(0  0 100% / 0.1);
+      background: hsl(0  0 100%/0.5);
       backdrop-filter: blur(1rem);
       z-index: 1000;
   }
@@ -65,7 +65,6 @@ body {
 
   .custom-table{
     margin-top: 6rem;
-    background-color: #000 !important;
   }
 
    tr{
@@ -81,6 +80,9 @@ body {
       .navigation ul{
           flex-direction: column;
           padding: 3rem 2rem;
+      }
+      .navigation a{
+        color: black;
       }
       
       .icon{
