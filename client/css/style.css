@@ -46,7 +46,7 @@ body {
   }
   
   .navigation {
-      background: hsl(0  0 100%/0.5);
+      background: hsl(0  0 100%/0.1);
       backdrop-filter: blur(1rem);
       z-index: 1000;
   }
@@ -71,6 +71,7 @@ body {
     cursor: pointer;
    }
 
+
   @media(max-width:768px) {
       .navigation{
           position: fixed;
@@ -80,9 +81,6 @@ body {
       .navigation ul{
           flex-direction: column;
           padding: 3rem 2rem;
-      }
-      .navigation a{
-        color: black;
       }
       
       .icon{
