@@ -1,6 +1,7 @@
 import User from "../models/userModel.js";
 import bcrypt from "bcryptjs";
 import generateTokenandSetCookie from "../utils/generateToken.js";
+import generateTokenandSetStorage from "../utils/generateToken.js";
 
 
 // SIGNUP
@@ -32,7 +33,8 @@ export const signup = async (req, res) => {
       profilePic: gender == "male" ? boyProfilePic : girlProfilePic,
     });
     if(newUser){
-        generateTokenandSetCookie(newUser._id, res);
+      generateTokenandSetCookie(newUser._id,res);
+
         await newUser.save();
         res.send(newUser);
     }
@@ -57,7 +59,7 @@ export const login = async (req, res) => {
           .status(400)
           .json({ error: "Username or password is incorrect" });
       }
-      generateTokenandSetCookie(user._id, res);
+      generateTokenandSetCookie(user._id,res);
       res.status(201).json({
         _id:user._id,
         fullName:user.fullName,
