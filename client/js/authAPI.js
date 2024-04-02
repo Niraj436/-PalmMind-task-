@@ -40,7 +40,7 @@ $(document).ready(function () {
       .then(function (response) {
         $.toast({
           heading: "Registered",
-          text: "You have successfully registered",
+          text: "Go to login page to login",
           position: "top-center",
           stack: false,
           icon: "success",
@@ -94,6 +94,7 @@ $(document).ready(function () {
       )
       .then(function (response) {
         // Handle successful login response
+        localStorage.setItem("jwt", JSON.stringify(response.data));
         $.toast({
           heading: "Logged in",
           text: "You have successfully Logged in",
@@ -104,7 +105,7 @@ $(document).ready(function () {
           hideAfter: 2000,
         });
 
-        window.location.replace('http://127.0.0.1:5500/client/html/index.html');
+        window.location.replace("../html/index.html");
       })
       .catch(function (error) {
         // Handle login error
@@ -117,7 +118,6 @@ $(document).ready(function () {
           textAlign: "center",
           hideAfter: 2000,
         });
-       
       });
   });
 });

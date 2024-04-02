@@ -17,6 +17,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!-- toast cdn -->
+    <link rel="stylesheet" href="../toast/jquery.toast.css">
+
 
     <link rel="stylesheet" href="../css/model.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -36,7 +39,7 @@
           <li><a href="./Login.html">Login</a></li>
           <li><a href="./Register.html">Register</a></li>
           <li><a href="#">Profile</a></li>
-          <li><a href="#">Log out</a></li>
+          <li id="logout"><a href="#" >Log out</a></li>
         </ul>
       </nav>
     </header>
@@ -99,7 +102,11 @@
   <!-- axios cdn -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+  <!-- toast -->
+  <script src="../toast/jquery.toast.js"></script>
+
   <script src="../js/selectiveRoute.js"></script>
   <script src="../js/Home.js"></script>
   <script src="../js/userAPI.js"></script>
+  <script src="../js/logoutapi.js"></script>
 </html>
